@@ -11,6 +11,6 @@
     "systemNotice": "true",
     "commandReply": "true",
     "welcomeChannel": "welcome",
-    "welcomeMessage": "{{user}}, Welcome to the server!",
+    "welcomeMessage": "{{user}}, Welcome to Project Evo! Happy exploiting.",
     "welcomeEnabled": "true"
 }

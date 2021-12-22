@@ -5,6 +5,18 @@ const config = {
       check: () => true
     },
 
+    { level: 2,
+      name: "Donator",
+      check: (message) => {
+        try {
+          const modRole = message.guild.roles.cache.find(r => r.name.toLowerCase() === message.settings.modRole.toLowerCase());
+          if (modRole && message.member.roles.cache.has(modRole.id)) return true;
+        } catch (e) {
+          return false;
+        }
+      }
+    },
+
     { level: 3,
       name: "Administrator", 
       check: (message) => {
